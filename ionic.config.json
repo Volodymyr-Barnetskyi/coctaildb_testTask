@@ -1,0 +1,7 @@
+{
+  "name": "coctaildb",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
