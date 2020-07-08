@@ -1,15 +1,20 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import {FilterComponent} from "./filter/filter.component";
+import {DrinksComponent} from "./drinks/drinks.component";
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'drinks',
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    path: 'drinks',
+    component: DrinksComponent
+  },
+  {
+    path: 'filter', component: FilterComponent
   }
 ];
 

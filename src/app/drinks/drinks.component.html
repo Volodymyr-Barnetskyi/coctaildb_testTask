@@ -1,0 +1,15 @@
+<mat-card class="wrapper">
+    <span class="wrapper__title">Drinks</span>
+    <button class="drink__button" routerLink="/filter"><mat-icon >filter_alt</mat-icon></button>
+</mat-card>
+
+<!--    <button mat-raised-button (click)="getCategories()">Get</button>-->
+    <mat-card class="drinks__items" *ngFor="let categ of categories">
+        <img class="drinks__img" src="{{categ.strDrinkThumb}}" alt="Photo__drinks">
+        <span>{{categ.strDrink}}</span>
+    </mat-card>
+
+    <mat-card class="drinks__items" *ngFor="let alco of alkoholic">
+        <img class="drinks__img" src="{{alco.strDrinkThumb}}" alt="Photo__drinks">
+        <span>{{alco.strDrink}}</span>
+    </mat-card>

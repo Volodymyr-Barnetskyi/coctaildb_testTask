@@ -1,0 +1,10 @@
+<mat-card>
+
+  <button class="filter__button" routerLink="/drinks"><mat-icon>
+    keyboard_backspace
+  </mat-icon></button>
+  <span class="filter__title">Filters</span>
+</mat-card>
+<mat-card *ngFor="let list of listCoctail">
+<span>{{list.strCategory}}</span>
+</mat-card>
